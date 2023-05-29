@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    --font-titles-color: #f5a155;
+    --bg-color-blue: #150a2a;
+    --alternative-color-pink: #c36676;
+    
+}
+
+@media screen and (min-width: 768px) {
+    i.ph-list, i.ph-x {
+        display: none;
+    }
+    .logo {
+        width: 222px;
+        display: block;
+        position: relative;
+        bottom: 8px;
+    }
+  
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    .menu > ul > li > a {
+        background-color: transparent;
+        border-top: none;
+        position: relative;
+        transition: all 5.7ms ease;
+    }
+    .menu > ul > li > a:hover {
+        background-color: transparent;
+        color: var(--font-titles-color);
+        
+    }
+    .menu > ul > li > a::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background-color: var(--alternative-color-pink);
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+      }
+      .menu > ul > li > a:hover::after {
+        width: 100%;
+        left: 0;
+      }
+
+      .slideshow {
+        width: 70%;
+        top: 30px;
+      }
+}
