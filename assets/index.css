@@ -26,11 +26,15 @@ body{
     color: white;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
 }
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+    position: relative;
+    margin: auto;
+    bottom: 7px;
 }
 .logo > a {
     text-decoration: none;
@@ -43,10 +47,16 @@ body{
 }
 
 nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-end;
+  margin: auto;
+}
+.ph {
+  position: absolute;
+  left: 30px;
 }
 #icon {
   transition: transform 0.3s ease-in-out;
@@ -60,12 +70,16 @@ nav{
     display: none;
 }
 menu{
-    width: 768px;
+    width: 100vw;
+    position: absolute;
+    top: 69px;
+    left: 0px;
+    z-index: 10;
     
 }
 .menu > ul {
     list-style-type: none; 
-    padding: 10px;     
+         
 }
 
 .menu > ul > li > a {
@@ -95,9 +109,11 @@ i:hover {
 }
 
 /* ------- Slide Area ----- */
+section{
+  width: 100vw;
+}
 .slideshow {
-  width: 90%;
-  margin: auto;
+  width: 100vw; 
 }
 /* Slideshow container */
 .slideshow-container {

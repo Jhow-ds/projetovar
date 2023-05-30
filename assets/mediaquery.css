@@ -23,17 +23,26 @@
         display: none;
     }
     .logo {
-        width: 222px;
+        width: 350px;
         display: block;
         position: relative;
         bottom: 8px;
+        margin: 0;
     }
   
     nav{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        justify-content: flex-start;
+        margin: auto;
+        gap: 30px;
 
+    }
+
+    menu{
+        position: static;
     }
     menu > ul > li {
         display: inline-block;
@@ -65,8 +74,27 @@
         left: 0;
       }
 
-      .slideshow {
-        width: 70%;
-        top: 30px;
+      section{
+        width: 100vw;
       }
+
+      .slideshow {
+        width: 100%;
+        margin: 20px auto;
+
+      }
+
+      /* Estilos para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 1px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Fundo da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Cor da alça da barra de rolagem */
+  }
+  
 }
