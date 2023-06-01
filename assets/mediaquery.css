@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&Roboto:wght@400;500;600;700;800&display=swap');
 
 
 *{
@@ -11,7 +11,7 @@
 }
 
 :root{
-    font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins','roboto', sans-serif;
     --font-titles-color: #f5a155;
     --bg-color-blue: #150a2a;
     --alternative-color-pink: #c36676;
@@ -19,7 +19,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    i.ph-list, i.ph-x {
+   i.ph-list, i.ph-x {
         display: none;
     }
     .logo {
@@ -79,22 +79,168 @@
       }
 
       .slideshow {
-        width: 100%;
-        margin: 20px auto;
+        width: 100vw;
+        margin: 0px auto 20px auto;
 
       }
 
+      /* ------- Cards ----- */
+      .cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 10px;
+        overflow-x: scroll;
+                
+      }
+
+      .card-content {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+               
+      }
+
+      .game-info{
+        width: 85%;
+        height: 140px;
+        align-items: center;
+        
+      }
+
+      .game-name {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Roboto';
+      }
+      .game-price {
+        font-size: 20px;
+      }
+
+      .comprar {
+        position: relative;
+        margin-top: 5px;
+      }
+
+      .card {
+        width: var(--card-width);
+        height: var(--card-height);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 36px;
+        perspective: 2500px;
+        margin: 0 50px;
+        border-radius: 10px;
+      }
+      
+      .cover-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      
+      .wrapper {
+        transition: all 0.5s;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+      
+      
+      .card:hover .wrapper {
+        transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+        box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+      }
+      
+      .wrapper::before,
+      .wrapper::after {
+        content: "";
+        opacity: 0;
+        width: 100%;
+        height: 50px;
+        transition: all 0.5s;
+        position: absolute;
+        left: 0;
+      }
+      .wrapper::before {
+        top: 0;
+        height: 100%;
+        background-image: linear-gradient(
+          to top,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%
+        );
+      }
+      .wrapper::after {
+        bottom: 0;
+        opacity: 1;
+        background-image: linear-gradient(
+          to bottom,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%
+        );
+      }
+      
+      .card:hover .wrapper::before,
+      .wrapper::after {
+        opacity: 1;
+      }
+      
+      .card:hover .wrapper::after {
+        height: 120px;
+      }
+      .title {
+        display: block;
+        width: 120px;
+        transition: transform 0.5s;
+      }
+      .card:hover .title {
+        transform: translate3d(0%, -50px, 100px);
+      }
+      
+      .character {
+        display: block;
+        width: 150px;
+        aspect-ratio: 2/3;
+        opacity: 0;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: -1;
+      }
+      
+      .card:hover .character {
+        opacity: 1;
+        transform: translate3d(0%, -10%, 200px);
+      }
+
+      
+
+      
+
+
       /* Estilos para navegadores WebKit (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 1px; /* Largura da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: transparent; /* Fundo da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Cor da alça da barra de rolagem */
-  }
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px; /* Largura da barra de rolagem */
+      }
+        
+      ::-webkit-scrollbar-track {
+        background-color: #14141475; /* Fundo da barra de rolagem */
+      }
+        
+      ::-webkit-scrollbar-thumb {
+        background-color: #4b4b4bbd;
+        border-radius: 20px; /* Cor da alça da barra de rolagem */
+      }
   
 }
