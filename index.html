@@ -1,180 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/imagens/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/index.css">
-    <link rel="stylesheet" href="assets/mediaquery.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/imagens/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/index.css" />
+    <link rel="stylesheet" href="assets/mediaquery.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <title>Game Market</title>
-</head>
-<body>
+    <title>Estante Games</title>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-            <a href="#">
-                <h1>Estante <i class="ph ph-game-controller"></i> Games</h1>
-            </a>
-            </div>
-            <i class="ph ph-list" onclick="clickMenu()" id="icon"></i>
-                        
-            
-            <menu class="menu" id="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </menu>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <h1>Estante <i class="ph ph-game-controller"></i> Games</h1>
+          </a>
+        </div>
+        <i class="ph ph-list" onclick="clickMenu()" id="icon"></i>
+
+        <menu class="menu" id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </menu>
+      </nav>
     </header>
 
     <section>
-        <!-- Slideshow container -->
-<div class="slideshow">
-  <div class="slideshow-container">
-  
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <img src="https://images.ladbible.com/resize?type=jpeg&quality=70&width=1200&fit=contain&gravity=auto&url=https://eu-images.contentstack.com/v3/assets/bltbc1876152fcd9f07/blt148bd9b8c8b012f0/6238aa9884767310048db879/witcherthumb.jpg" alt="Primeira imagem do slideshow">
-        <div class="text">The Witcher Saga</div>
-      </div>
-  
-      <div class="mySlides fade">
-        <img src="https://cdn1.epicgames.com/offer/f5deacee017b4b109476933f7dd2edbd/EGS_EASPORTSFIFA23StandardEdition_EACanada_S1_2560x1440-aaf9c5273c27a485f2cce8cb7e804f5c" alt="segunda imagem do slideshow">
-        <div class="text">FIFA 23</div>
-      </div>
-  
-      <div class="mySlides fade">
-        <img src="assets/imagens/codmw2.jpg" alt="terceira imagem do slideshow">
-        <div class="text">Call of Duty Modern Warfare 2</div>
-      </div>
-  
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-  
-    <!-- The dots/circles -->
-    <div class="dots" style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-</div>
-</section>
-
-<main>
-  <h2 class="top-games">Top Games</h2>
-  <div class="cards-container">
-    <div class="card-content">
-      <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/?l=portuguese" alt="site do jogo">
-        <div class="card">
-          <div class="wrapper">
-            <img src="https://i.pinimg.com/originals/77/6e/30/776e308b024cbda2fccb0c088e83c9bc.jpg" class="cover-image" alt="game-image" />
+      <!-- Slideshow container -->
+      <div class="slideshow">
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img
+              src="https://images.ladbible.com/resize?type=jpeg&quality=70&width=1200&fit=contain&gravity=auto&url=https://eu-images.contentstack.com/v3/assets/bltbc1876152fcd9f07/blt148bd9b8c8b012f0/6238aa9884767310048db879/witcherthumb.jpg"
+              alt="Primeira imagem do slideshow"
+            />
+            <div class="text">The Witcher Saga</div>
           </div>
-          <img src="assets/imagens/thewitcher.png" class="title" alt="game-image" />
-          <img src="assets/imagens/geralt.png" class="character" alt="game-image" id="the-witcher" />
-        </div>
-      </a>
-      <div class="game-info">
-        <span class="game-name">The Witcher</span>
-        <span class="game-price">R$ 199,00</span>
-        <div class="comprar" ><i class="ph ph-shopping-cart"></i>Comprar</div>
-      </div>
-    </div>
 
-    <div class="card-content">
-      <a href="" alt="site do jogo" target="no-neeper">
-        <div class="card">
-          <div class="wrapper">
-            <img src="assets/imagens/fifa23.png" class="cover-image" alt="game-image" />
+          <div class="mySlides fade">
+            <img
+              src="https://cdn1.epicgames.com/offer/f5deacee017b4b109476933f7dd2edbd/EGS_EASPORTSFIFA23StandardEdition_EACanada_S1_2560x1440-aaf9c5273c27a485f2cce8cb7e804f5c"
+              alt="segunda imagem do slideshow"
+            />
+            <div class="text">FIFA 23</div>
           </div>
-          <img src="assets/imagens/mbappe.png" class="character" alt="game-image" />
-        </div>
-      </a>
-      <div class="game-info">
-        <span class="game-name">FIFA 23</span>
-        <span class="game-price">R$ 199,00</span>
-        <div class="comprar" ><i class="ph ph-shopping-cart"></i>Comprar</div>
-      </div>
-    </div>
 
-    <div class="card-content">
-      <a href="#" alt="site do jogo">
-        <div class="card">
-          <div class="wrapper">
-            <img src="assets/imagens/mw2.png" class="cover-image" alt="game-image" />
+          <div class="mySlides fade">
+            <img
+              src="assets/imagens/codmw2.jpg"
+              alt="terceira imagem do slideshow"
+            />
+            <div class="text">Call of Duty Modern Warfare 2</div>
           </div>
-          
-          <img src="assets/imagens/ghost.png" class="character" alt="game-image" />
-        </div>
-      </a>
-      <div class="game-info">
-        <span class="game-name">COD MW 2</span>
-        <span class="game-price">R$ 199,00</span>
-        <div class="comprar" ><i class="ph ph-shopping-cart"></i>Comprar</div>
-      </div>
-    </div>
 
-    <div class="card-content">
-      <a href="#" alt="site do jogo">
-      <div class="card">
-        <div class="wrapper">
-          <img src="assets/imagens/nba.png" class="cover-image" alt="game-image" />
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-          <img src="assets/imagens/boneconba.png" class="character" alt="game-image" />
-        </div>
-      </a>
-      <div class="game-info">
-        <span class="game-name">NBA 2K23</span>
-        <span class="game-price">R$ 199,00</span>
-        <div class="comprar" ><i class="ph ph-shopping-cart"></i>Comprar</div>
-      </div>
-    </div>
+        <br />
 
-    <div class="card-content">
-      <a href="#" alt="site do jogo">
-      <div class="card">
-        <div class="wrapper">
-          <img src="assets/imagens/assassins.png" class="cover-image" alt="game-image" />
+        <!-- The dots/circles -->
+        <div class="dots" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-          <img src="assets/imagens/bonecoassasssins.png" class="character" alt="game-image" />
-        </div>
-      </a>
-      <div class="game-info">
-        <span class="game-name">The Witcher</span>
-        <span class="game-price">R$ 199,00</span>
-        <div class="comprar" ><i class="ph ph-shopping-cart"></i>Comprar</div>
       </div>
-    </div>
-    
-    <div class="card-content">
-      <a href="#" alt="site do jogo">
-        <div class="card">
-          <div class="wrapper">
-            <img src="https://i.pinimg.com/originals/77/6e/30/776e308b024cbda2fccb0c088e83c9bc.jpg" class="cover-image" alt="game-image" />
+    </section>
+
+    <main>
+      <h2 class="top-games">Top Games</h2>
+      <div class="cards-container">
+        <div class="card-content">
+          <a
+            href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/?l=portuguese"
+            alt="site do jogo"
+          >
+            <div class="card">
+              <div class="wrapper">
+                <img
+                  src="https://i.pinimg.com/originals/77/6e/30/776e308b024cbda2fccb0c088e83c9bc.jpg"
+                  class="cover-image"
+                  alt="game-image"
+                />
+              </div>
+              <img
+                src="assets/imagens/thewitcher.png"
+                class="title"
+                alt="game-image"
+              />
+              <img
+                src="assets/imagens/geralt.png"
+                class="character"
+                alt="game-image"
+                id="the-witcher"
+              />
+            </div>
+          </a>
+          <div class="game-info">
+            <span class="game-name">The Witcher</span>
+            <span class="game-price">R$ 199,00</span>
+            <div class="comprar">
+              <i class="ph ph-shopping-cart"></i>Comprar
+            </div>
           </div>
-          <img src="assets/imagens/thewitcher.png" class="title" alt="game-image" />
-          <img src="assets/imagens/geralt.png" class="character" alt="game-image" />
         </div>
-      </a>
-      <div class="game-info">
-        <span class="game-name">The Witcher</span>
-        <span class="game-price">R$ 199,00</span>
-        <div class="comprar" ><i class="ph ph-shopping-cart"></i>Comprar</div>
+
+        <div class="card-content">
+          <a href="" alt="site do jogo" target="no-neeper">
+            <div class="card">
+              <div class="wrapper">
+                <img
+                  src="assets/imagens/fifa23.png"
+                  class="cover-image"
+                  alt="game-image"
+                />
+              </div>
+              <img
+                src="assets/imagens/mbappe.png"
+                class="character"
+                alt="game-image"
+              />
+            </div>
+          </a>
+          <div class="game-info">
+            <span class="game-name">FIFA 23</span>
+            <span class="game-price">R$ 199,00</span>
+            <div class="comprar">
+              <i class="ph ph-shopping-cart"></i>Comprar
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <a href="#" alt="site do jogo">
+            <div class="card">
+              <div class="wrapper">
+                <img
+                  src="assets/imagens/mw2.png"
+                  class="cover-image"
+                  alt="game-image"
+                />
+              </div>
+
+              <img
+                src="assets/imagens/ghost.png"
+                class="character"
+                alt="game-image"
+              />
+            </div>
+          </a>
+          <div class="game-info">
+            <span class="game-name">COD MW 2</span>
+            <span class="game-price">R$ 199,00</span>
+            <div class="comprar">
+              <i class="ph ph-shopping-cart"></i>Comprar
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <a href="#" alt="site do jogo">
+            <div class="card">
+              <div class="wrapper">
+                <img
+                  src="assets/imagens/nba.png"
+                  class="cover-image"
+                  alt="game-image"
+                />
+              </div>
+              <img
+                src="assets/imagens/boneconba.png"
+                class="character"
+                alt="game-image"
+              />
+            </div>
+          </a>
+          <div class="game-info">
+            <span class="game-name">NBA 2K23</span>
+            <span class="game-price">R$ 199,00</span>
+            <div class="comprar">
+              <i class="ph ph-shopping-cart"></i>Comprar
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <a href="#" alt="site do jogo">
+            <div class="card">
+              <div class="wrapper">
+                <img
+                  src="assets/imagens/assassins.png"
+                  class="cover-image"
+                  alt="game-image"
+                />
+              </div>
+              <img
+                src="assets/imagens/bonecoassasssins.png"
+                class="character"
+                alt="game-image"
+              />
+            </div>
+          </a>
+          <div class="game-info">
+            <span class="game-name">Assassin's Creed Valhalla</span>
+            <span class="game-price">R$ 199,00</span>
+            <div class="comprar">
+              <i class="ph ph-shopping-cart"></i>Comprar
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <a href="#" alt="site do jogo">
+            <div class="card">
+              <div class="wrapper">
+                <img
+                  src="assets/imagens/tlou.png"
+                  class="cover-image"
+                  alt="game-image"
+                />
+              </div>
+              <img
+                src="assets/imagens/ellie.png"
+                class="character"
+                alt="game-image"
+              />
+            </div>
+          </a>
+          <div class="game-info">
+            <span class="game-name">The Last of Us Part 2</span>
+            <span class="game-price">R$ 199,00</span>
+            <div class="comprar">
+              <i class="ph ph-shopping-cart"></i>Comprar
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </main>
 
-  <button>123</button>
-</main>
-  
+    <section class="grid">
+      <h1>Novidades</h1>
+      <div class="grid-container">
+        <div class="grid-box1">
+          <div class="grid-content">123</div>
+        </div>
+        <div class="grid-box2">
+          <div class="grid-content">123</div>
+        </div>
+        <div class="grid-box3">
+          <div class="grid-content">123</div>
+        </div>
+      </div>
+    </section>
 
-<script src="assets/index.js"></script>
-</body>
+    <script src="assets/index.js"></script>
+  </body>
 </html>

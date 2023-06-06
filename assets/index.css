@@ -21,7 +21,7 @@
 
   --card-height: 300px;
   --card-width: calc(var(--card-height) / 2);
-  --content-width: calc(100vw - 6px)
+  --content-width: calc(100vw - 6px);
 }
 
 body {
@@ -103,7 +103,7 @@ i:hover {
 
 /* ------- Slide Area ----- */
 section {
-  width: var(--content-width);
+  width: 100vw;
   overflow: hidden;
 }
 .slideshow {
@@ -209,11 +209,12 @@ main {
 }
 
 .top-games {
-  margin-left: 30px;
+  padding-left: 10px;
   margin-bottom: 20px;
 }
 .cards-container {
-  width: var(--content-width);
+  width: 100%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,13 +249,13 @@ main {
 }
 
 .game-name {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Roboto";
 }
 .game-price {
   color: var(--titles-color);
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 400;
   
 }

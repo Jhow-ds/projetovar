@@ -20,9 +20,14 @@
 
   --card-height: 300px;
   --card-width: calc(var(--card-height) / 2);
+  --content-width: calc(100vw - 6px);
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    width: var(--content-width);
+  }
+
   i.ph-list,
   i.ph-x {
     display: none;
@@ -77,13 +82,12 @@
   }
   /* ------ Slide ------ */
   .slideshow {
-    width:calc(100vw - 6px) ; /* desconto da barra de rolagem lateral */
-    
+    width: var(--content-width); /* desconto da barra de rolagem lateral */
   }
 
   /* ------- Cards ----- */
   .cards-container {
-    height: 410px;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -98,17 +102,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   .card-content a {
     width: 100%;
-    height: 100%;
+  }
+  .game-info {
+    justify-content: space-between;
   }
 
   .game-name {
     font-size: 20px;
     font-weight: 400;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
   .game-price {
     font-size: 18px;
@@ -215,11 +220,33 @@
     transform: translate3d(0%, -10%, 200px);
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "principal principal aside1"
+      "principal principal aside2";
+    height: 100vh;
+  }
+  .grid-box1 {
+    grid-area: principal;
+    background: #ff0000;
+  }
+  .grid-box2 {
+    grid-area: aside1;
+    background: #eeff00;
+  }
+  .grid-box3 {
+    grid-area: aside2;
+    background: #2bff00;
+  }
 
   /* Estilos para navegadores WebKit (Chrome, Safari) */
   ::-webkit-scrollbar {
-    width: 6px;/* Largura da barra de rolagem */
-    height: 6px; 
+    width: 6px; /* Largura da barra de rolagem */
+    height: 6px;
   }
 
   ::-webkit-scrollbar-track {
