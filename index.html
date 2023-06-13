@@ -19,7 +19,7 @@
       <nav class="navbar">
         <div class="logo">
           <a href="#">
-            <h1>Estante <i class="ph ph-game-controller"></i> Games</h1>
+            <h1>Estante <i id="ph-game-controller" class="ph ph-game-controller"></i> Games</h1>
           </a>
         </div>
         <i class="ph ph-list" onclick="clickMenu()" id="icon"></i>
@@ -27,7 +27,7 @@
         <menu class="menu" id="menu">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="#" target="">News</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -78,7 +78,7 @@
         </div>
       </div>
     </section>
-      <!-- Inicio dos cards -->
+    <!-- Inicio dos cards -->
     <main>
       <h2 class="top-games">Top Games</h2>
       <div class="cards-container">
@@ -118,7 +118,7 @@
         </div>
 
         <div class="card-content">
-          <a href="" alt="site do jogo" target="no-neeper">
+          <a href="#" alt="site do jogo">
             <div class="card">
               <div class="wrapper">
                 <img
@@ -247,15 +247,125 @@
             </div>
           </div>
         </div>
+
+        <div class="card-content">
+          <a href="#" alt="site do jogo">
+            <div class="card">
+              <div class="wrapper">
+                <img
+                  src="assets/imagens/gow.png"
+                  class="cover-image"
+                  alt="game-image"
+                />
+              </div>
+              <img
+                src="assets/imagens/kratos.png"
+                class="character"
+                alt="game-image"
+              />
+            </div>
+          </a>
+          <div class="game-info">
+            <span class="game-name">God Of War Ragnarok</span>
+            <span class="game-price">R$ 199,00</span>
+            <div class="comprar">
+              <i class="ph ph-shopping-cart"></i>Comprar
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
+    <section>
+      <div class="news-container">
+        <div class="news-item1">
+          <video
+            autoplay="autoplay"
+            muted="muted"
+            loop="loop"
+            src="assets/imagens/hl-video.mp4"
+            class="trailer-video"
+          >
+            <source
+              type="video/mp4"
+              src="assets/imagens/hl-video.mp4"
+              preload="auto"
+            />
+          </video>
 
-    <section class="news">
-      <h1>Novidades</h1>
-      
+          <a href="https://www.hogwartslegacy.com/pt-br">
+            <h1>Hogwarts Legacy</h1>
+          </a>
+          <p>
+            Hogwarts Legacy é um RPG que se passa no universo de Harry Potter
+            (antes dos livros) e coloca o jogador como um estudante de Hogwarts,
+            contando com aulas de magia, embates entre as Casas e lutas com
+            varinha.
+          </p>
+          <div class="gallery">
+            <figure class="gallery-image"><img src="/assets/imagens/hlg1.jpg" alt="hogwarts legacy thumb image"></figure>
+            <figure class="gallery-image"><img src="/assets/imagens/hlg2.jpg" alt="hogwarts legacy thumb image"></figure>
+            <figure class="gallery-image"><img src="/assets/imagens/hlg3.jpg" alt="hogwarts legacy thumb image"></figure>
+            <figure class="gallery-image"><img src="/assets/imagens/hlg4.jpg" alt="hogwarts legacy thumb image"></figure>
+          </div>
+        </div>
+        <div class="aside-news">
+          <div class="news-item2">
+            <figure>
+              <img src="assets/imagens/spiderman.jpg" alt="" />
+            </figure>
+            <a href="https://www.marvel.com/games/marvels-spider-man-2">
+              <h3>Marvel's Spider-Man 2</h3>
+            </a>
+            <p>
+              Marvel's Spider-Man 2 é a sequência do aclamado jogo da Insomniac
+              Games, que terá Peter Parker e Miles Morales lutando juntos contra
+              um vilão icônico do Teioso: ninguém menos do que Venom!
+            </p>
+          </div>
+
+          <div class="news-item3">
+            <figure>
+              <img src="assets/imagens/street.png" alt="" />
+            </figure>
+            <a href="https://www.streetfighter.com/6/pt-br">
+              <h3>Street Fighter 6</h3>
+            </a>
+            <p>
+              A porradaria clássica estará de volta em 2023 com Street Fighter
+              6! Com estética colorida e novos modos, o jogo terá 18 lutadores
+              jogáveis no lançamento e até um tipo de exploração livre em
+              terceira pessoa pela primeira vez.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div>© 2023 Estante Games. Todos os direitos reservados. Todas as marcas comerciais são propriedade dos respetivos proprietários nos E.U.A. e outros países.</div>
+          <div>IVA incluído em todos os preços onde aplicável.&nbsp;&nbsp;
+
+            <a href="#" rel="">Política de privacidade</a>
+            &nbsp; | &nbsp;
+            <a href="#" rel="">Termos legais</a>
+            &nbsp; | &nbsp;
+            <a href="#" rel="">Acordo de Subscrição Steam</a>
+            &nbsp; | &nbsp;
+            <a href="#" rel="">Reembolsos</a>
+            &nbsp; | &nbsp;
+            <a href="#" rel="">Cookies</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <div class="instagram"><a href="https://www.instagram.com/jhow_ds/"><i class="ph ph-instagram-logo"></i>  Instagram</a></div>
+          <div class="facebook"><a href="https://web.facebook.com/jhow.ds/"><i class="ph ph-facebook-logo"></i> Facebook</a></div>
+          <div class="github"><a href="https://github.com/Jhow-ds"><i class="ph ph-github-logo"></i> GitHub</a></div>
+        </div>
+      </div>
+    </footer>
 
     <script src="assets/index.js"></script>
   </body>

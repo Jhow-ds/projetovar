@@ -53,7 +53,7 @@ nav {
 
 #icon {
   position: absolute;
-  left: 30px;
+  left: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -96,7 +96,7 @@ i#icon {
   font-size: 30px;
   cursor: pointer;
 }
-i:hover {
+i#icon:hover {
   color: var(--highlight-color);
 }
 
@@ -109,6 +109,7 @@ section {
 .slideshow {
   width: 100%;
 }
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -292,4 +293,89 @@ main {
 
 .title {
   display: none;
+}
+
+/* Inicio noticias */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  width: var(--content-width);
+  gap: 10px;
+}
+.news-container a {
+  text-decoration: none;
+  color: white;
+}
+.news-container a:hover{
+  text-decoration: underline;
+}
+
+.news-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.news-item1 {
+  background: var(--secondary-dark);
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.news-item1 p {
+  color: var(--secondary-light);
+}
+.news-item1 video {
+  width: 100%;
+  border-radius: 10px;
+}
+.news-item1 .gallery {
+  display: none;
+}
+
+.aside-news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.aside-news p {
+  font-size: 14px;
+  color: var(--secondary-light);
+}
+.news-item2, .news-item3{
+  background: var(--secondary-dark);
+  border-radius: 10px;
+  padding: 10px;
+}
+footer a{
+  text-decoration: none;
+  color: #C6D4DF;
+}
+footer a:hover {
+  color: white;
+}
+
+.footer-content {
+  border-top: 1px solid #363c44;
+  border-bottom: 1px solid #363c44;
+  color: var(--secondary-light);
+  padding: 10px;
+  text-align: center;
+}
+.footer-content div {
+  margin: 10px 0 10px 0;
+}
+
+.footer-social {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.footer-social .ph-facebook-logo {
+  color: #4267B2;
+}
+.footer-social .ph-instagram-logo {
+  color: #C13584
 }
