@@ -276,6 +276,11 @@ main {
   margin: 0px auto 0px auto;
   bottom: 20px;
 }
+.comprar a{
+  text-decoration: none;
+  color: var(--font-color);
+  text-align: center;
+}
 
 .comprar:hover {
   background-color:var(--highlight-color);
@@ -378,4 +383,75 @@ footer a:hover {
 }
 .footer-social .ph-instagram-logo {
   color: #C13584
+}
+
+.background {
+  background-color: rgba(0, 0, 0, 0.548);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.formcard{
+  position: absolute;
+  background: rgba(51, 51, 51, 0.87);
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 500px;
+  padding: 40px;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.781);
+  box-sizing: border-box;
+  border-radius: 20px;
+
+}
+
+.formcard .user-card {
+  position: relative;
+}
+
+.formcard .user-card input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.712);
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+}
+
+.formcard h2{
+  color: white;
+
+}
+
+form > input[type= submit]{
+  display: block;
+  font-size: 1.2em;
+  width: 100%;
+  height: 40px;
+  background-color:var(--titles-color);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+
+}
+
+form > input[type= submit]:hover{
+  background-color:var(--highlight-color);
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.user-card-sexo{
+  display: flex;
+  color: white;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 10px;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/imagens/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/index.css" />
+    <link rel="stylesheet" href="assets/mediaquery.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#">
+              <h1>Estante <i id="ph-game-controller" class="ph ph-game-controller"></i> Games</h1>
+            </a>
+          </div>
+          <i class="ph ph-list" onclick="clickMenu()" id="icon"></i>
+  
+          <menu class="menu" id="menu">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="#" >News</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </menu>
+        </nav>
+      </header>
+    <div class="formcard">
+        <h2>Cadastro</h2>
+        <form class="formulario" action="php.php" method="post">
+            <div class="user-card">
+                <label for="inome"></label>
+                <input type="text" id="inome" placeholder="Nome" >
+            </div>
+
+            <div class="user-card">
+                <label for="iemail"></label>
+                <input type="email" name="email" id="iemail" placeholder="Email" >
+            </div>
+
+            <div class="user-card">
+                <label for="icel"></label>
+                <input type="tel" name="cel" id="icel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"  placeholder="Celular">
+            </div>
+
+            <div class="user-card">
+                <label for="isenha"></label>
+                <input type="password" name="senha" id="isenha" placeholder="Senha">
+            </div>
+
+            <div class="user-card-sexo">
+                
+                <input type="radio" name="sexo" id="masc">
+                <label for="masc">Masculino</label>
+                
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <input class="botao" type="submit" value="Cadastrar">
+        </form>
+    </div>
+      
+      <script src="assets/index.js"></script>
+</body>
+</html>
